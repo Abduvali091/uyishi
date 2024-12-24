@@ -1,0 +1,42 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.stay {
+  background-color: #5267df;
+  height: 360px;
+  margin-top: 150px;
+}
+
+.stay__title {
+  display: inline-block;
+  margin-left: 600px;
+  color: white;
+  margin-top: 58px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.stay__text {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form__input {
+  width: 300px;
+  height: 48px;
+  margin-left: 500px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form__btn {
+  @include m.login-link;
+  border: none;
+  width: 136px;
+  height: 48px;
+  margin-left: 10px;
+}

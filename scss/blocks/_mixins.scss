@@ -1,0 +1,86 @@
+@use "./variables" as v;
+
+@mixin unstyled-list {
+  margin-block: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin flex-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin download-link {
+  display: inline-block;
+  width: 232px;
+  padding: 10px 30px;
+  background-color: #5267df;
+  border-radius: 5px;
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+}
+
+@mixin font-style {
+  font-size: v.$main-font-size;
+  line-height: 28px;
+  color: v.$main-color;
+  opacity: 0.5;
+}
+
+@mixin title-style {
+  margin-block: 0 16px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: v.$main-color;
+  text-align: center;
+}
+
+@mixin navbar-link {
+  color: v.$main-color;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  text-decoration-line: none;
+}
+
+@mixin login-link {
+  width: 111px;
+  padding: 12px 28px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  background-color: #fa5959;
+  border-radius: 5px;
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+  text-decoration-line: none;
+}
+
+@mixin link-font-style {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #fff;
+  background-color: v.$main-bg-color;
+  border-radius: 5px;
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+  text-decoration-line: none;
+}
+
+@mixin hero-image {
+  background-image: url(../images/herobgimage.svg);
+  background-repeat: no-repeat;
+  background-size: 1155px 486px;
+  background-position:calc(50% + 600px);
+}
+
+@mixin flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

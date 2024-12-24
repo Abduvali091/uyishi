@@ -1,0 +1,48 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.hero {
+  padding-block: 55px 143px;
+  @include m.hero-image;
+  &__wrapper {
+    width: 539px;
+  }
+  
+  &__title {
+    margin-block: 0 24px;
+    color: v.$main-color;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+  }
+  
+  &__desc {
+    margin-block: 0 32px;
+    @include m.font-style;
+  }
+  
+  &__list {
+    @include m.flex-style;
+    justify-content: start;
+    column-gap: 16px;
+    @include m.unstyled-list;
+  }
+  
+  &__link {
+    display: inline-block;
+    width: 166px;
+    padding: 10px 15px;
+    color: v.$text-color;
+    background: v.$main-bg-color;
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px -4px #495dcf33;
+    text-decoration-line: none;
+  }
+  
+  &__link--firefox {
+    color: v.$main-color;
+    background-color: #f7f7f7;
+  }
+}
+

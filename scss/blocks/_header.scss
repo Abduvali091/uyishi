@@ -1,0 +1,31 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.site-header {
+  padding-block: 56px 124px;
+  &__wrapper {
+    @include m.flex-style;
+  }
+
+  &__inner {
+    @include m.flex-style;
+    column-gap: 48px;
+  }
+}
+
+.navbar {
+  &__list {
+    @include m.flex-style;
+    column-gap: 44px;
+    @include m.unstyled-list;
+  }
+
+  &__link {
+    @include m.navbar-link;
+  }
+}
+
+.login-link {
+  @include m.login-link;
+}
+

@@ -1,0 +1,87 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.features {
+  padding-block: 60px 195px;
+  background-image: url("../images/clickbgimage.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 550px) calc(50% + 180px);
+  &__wrapper {
+    width: 540px;
+    margin-inline: auto;
+    text-align: center;
+  }
+  
+  &__title {
+    @include m.title-style;
+  }
+  
+  &__desc {
+    margin-block: 0 72px;
+    @include m.font-style;
+  }
+  
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include m.unstyled-list;
+    margin-bottom: 129px;
+  }
+  
+  &__list::before {
+    position: absolute;
+    bottom: -1px;
+    width: 732px;
+    height: 1px;
+    background-color: #495dcf33;
+    content: "";
+  }
+  
+  &__item {
+    padding-inline: 54px;
+    padding-bottom: 31px;
+    
+    &:first-child {
+      border-bottom: 4px solid #fa5959;
+    }
+  }
+  
+  &__link {
+    display: inline-block;
+    color: v.$main-color;
+    line-height: 17px;
+    letter-spacing: 0.533px;
+    text-decoration-line: none;
+  }
+  
+  &__inner-box {
+    display: flex;
+    justify-content: end;
+  }
+  
+  &__inner {
+    width: 445px;
+  }
+
+  &__heading-box {
+    width: 335px;
+  }
+  
+  &__heading {
+    margin-block: 0 16px;
+    @include m.title-style;
+  }
+  
+  &__text {
+    margin-block: 0 32px;
+    @include m.font-style;
+  }
+  
+  &__more-link {
+    width: 114px;
+    padding: 10px 20px;
+    @include m.link-font-style;
+  }
+}
+

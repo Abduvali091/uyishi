@@ -1,0 +1,61 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+.asked__titel {
+  @include m.title-style ;
+}
+
+.asked__desc {
+  @include m.font-style;
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.asked__span {
+  display: block;
+  border: 1px solid #a8aab39f;
+  width: 540px;
+  height: 1px;
+  opacity: 0.15px;
+  margin-inline: auto;
+}
+
+.asked__text {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-left: 490px;
+}
+
+.asked__icon {
+  display: inline-block;
+  margin-left: 350px;
+}
+
+.asked__iconon {
+  display: inline-block;
+  margin-left: 223px;
+}
+
+.asked__icontwo {
+  display: inline-block;
+  margin-left: 327px;
+}
+
+.asked__iconthri {
+  display: inline-block;
+  margin-left: 181px;
+}
+
+.asked__link {
+  display: block;
+  @include m.download-link;
+  text-align: center;
+  text-decoration-line: none;
+  color: white;
+  width: 134px;
+  height: 48px;
+  margin-left: 663px;
+  margin-top: 54px;
+}

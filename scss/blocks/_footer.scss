@@ -1,0 +1,48 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
+.site-footer {
+  background-color: #242A45;
+  height: 88px;
+}
+
+.site-footer__logo {
+  display: block;
+  margin-left: 165px;
+  padding-block: 32px;
+}
+
+.site-footer__box {
+  display: flex;
+}
+
+.site-footer__list {
+  @include m.unstyled-list;
+  display: flex;
+}
+
+.site-footer__link {
+  display: block;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration-line: none;
+  padding-block: 36px;
+  margin-left: 50px;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-square-facebook {
+  color: white;
+}
+
+.site-footer__icons {
+  display: flex;
+  column-gap: 40px;
+  margin-top: 32px;
+  margin-left: 515px;
+
+}
